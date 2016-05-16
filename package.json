@@ -1,0 +1,31 @@
+{
+  "name": "x-cli",
+  "version": "1.0.0",
+  "description": "Intuitive Command-line Interface Builder for Node.js applications. Extremely simple branching based on command line options",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "keywords": [
+    "x-cli",
+    "cli",
+    "command",
+    "line",
+    "command-line",
+    "interface",
+    "argument",
+    "parser",
+    "arg",
+    "argv",
+    "argvark"
+  ],
+  "author": "William McMillian",
+  "license": "ISC",
+  "dependencies": {
+    "argvark": "^2.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
