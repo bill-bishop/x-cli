@@ -39,6 +39,9 @@ describe('cli', function () {
       },
       "password": function (pass) {
         inputPass = pass;
+      },
+      "nothing": function (abc) {
+        inputPass += 'FAIL';
       }
     });
 

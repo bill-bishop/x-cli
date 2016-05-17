@@ -7,11 +7,12 @@ function parseCommand(interface) {
     if (/function ?\(\s*\w+?\)/.test(fn.toString())) {
       // fn is expecting a param
       param = argv('(?:--)?' + command + '=(.+)') || argv.after(command);
-      fn(param);
+      if(param) {
+        fn(param);
+      }
     }
     else if(argv(command) || argv.flag(command)) {
-      console.log(command, argv(command));
-      fn(param);
+      fn();
     }
   }
 }
